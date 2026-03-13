@@ -3,7 +3,7 @@ kind: Deployment
 metadata:
   name: image-classifier
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: image-classifier
@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: image-classifier
-        image: luferosos/image-classifier
+        image: tuusuario/image-classifier
         ports:
         - containerPort: 5000
